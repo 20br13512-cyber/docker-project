@@ -8,7 +8,7 @@ app.use(express.json());
 
 // Connect to MongoDB container
 mongoose
-  .connect("mongodb://mongo:27017/dockerlearn", {
+  .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
