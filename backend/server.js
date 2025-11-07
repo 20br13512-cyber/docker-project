@@ -17,7 +17,7 @@ mongoose
 
 // Simple API endpoint
 app.get("/api/hello", (req, res) => {
-  res.json({ message: "Hello from backend ,nice work" });
+  res.json({ message: "Hello from backend " });
 });
 
 // Start server
